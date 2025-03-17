@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+    --color-primary: #2b2929;
+    --color-secondary: #e25b31;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-button: #8031e9;
+    --color-button-hover: #000000;
+    --color-text: #000000;
     --color-white: #FFFFFF;
 }
 
@@ -37,6 +37,12 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
+}
+
+.header-banner img {
+    max-width: 500px; 
+    height: auto; 
+    margin: 0 10px; 
 }
 
 /* Sección de entrada */
@@ -116,13 +122,13 @@ button {
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
+    background-color: var(--color-button);
+    color: white;
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: #000000;
 }
 
 /* Listas */
@@ -136,8 +142,8 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
+    color: white;
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
 }

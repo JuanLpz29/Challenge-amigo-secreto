@@ -29,3 +29,14 @@ function mostrarAmigos() {
     }
     lista.innerHTML = contenidoLista; // Asignamos el contenido construido a la lista
 }
+
+function sortearAmigo(){
+    if(amigos.length < 2){
+        alert('Debes agregar al menos dos amigos para sortear!');
+    }else{
+        //ELEGIR AL QUE SERÁ MI AMIGO SECRETO AL AZAR
+        let amigoSecreto = amigos[Math.floor(Math.random() * amigos.length)];
+        document.getElementById('resultado').innerHTML = `Tu amigo secreto es: ${amigoSecreto}`;
+        console.log(amigoSecreto);
+    }
+}
