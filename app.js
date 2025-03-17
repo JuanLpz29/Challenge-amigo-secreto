@@ -13,7 +13,6 @@ function agregarAmigo() {
         let amigo = document.getElementById('amigo').value;
         amigos.push(amigo);
         document.getElementById('amigo').value = '';
-        console.log(amigos);
         mostrarAmigos(); // Se llama a la función para mostrar los amigos
     }
 }
@@ -37,6 +36,5 @@ function sortearAmigo(){
         //ELEGIR AL QUE SERÁ MI AMIGO SECRETO AL AZAR
         let amigoSecreto = amigos[Math.floor(Math.random() * amigos.length)];
         document.getElementById('resultado').innerHTML = `Tu amigo secreto es: ${amigoSecreto}`;
-        console.log(amigoSecreto);
     }
 }
